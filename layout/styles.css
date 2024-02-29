@@ -90,7 +90,7 @@ html {
 -------------------------------------------------------------------*/
 
 .back_img {
-  background-image: url("/assets/images/hk3.jpg");
+  background-image: url("../assets/images/hk3.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -510,6 +510,12 @@ h5 {
   font-size: 1.1em;
   margin: 13px 0;
   caret-color: transparent;
+}
+
+.contact .form .submit form a:hover {
+  background: #f13a11;
+  color: #fff;
+  transition: 0.4s;
 }
 
 .contact .map {
