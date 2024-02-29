@@ -303,11 +303,8 @@
 
         Email.send({
           SecureToken: "0e57587a-0b28-49db-997d-f136fbb0e52c",
-          Host: "smtp.elasticemail.com",
-          Username: "henrik.g.kristensson@gmail.com",
-          Password: "E6DBB9B73356D49AB66A2CF8E9D422881620",
           To: "henrik.g.kristensson@gmail.com",
-          From: "coderhenrik92@gmail.com",
+          From: email,
           Subject: subject,
           Body: body,
         }).then((message) => alert(message));
