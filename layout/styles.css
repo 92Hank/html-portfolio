@@ -1,0 +1,1118 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-duration: 1000ms;
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em 6.5em;
+  background: #222;
+  z-index: 100000;
+}
+
+.nav h2 {
+  color: #fff;
+  font-size: 1.7em;
+  caret-color: transparent;
+}
+
+#item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#item li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+#item li a {
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#item li a:hover,
+#item .icon i:hover {
+  color: #ff5733;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#item .icon {
+  caret-color: transparent;
+}
+
+#item .icon i {
+  color: #fff;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
+#bar {
+  color: #ff5733;
+  font-weight: lighter;
+  font-size: 1.5em;
+  display: none;
+}
+
+/*------------------------------------------------------------------
+    BACKGROUND IMAGE
+-------------------------------------------------------------------*/
+
+.back_img {
+  background-image: url("/assets/images/hk3.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+
+.back_img .overlay {
+  background: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mid p {
+  color: #7f8c8d;
+  font-size: 1.3em;
+  margin-bottom: 1.4em;
+  caret-color: transparent;
+}
+
+.mid h2 {
+  color: #fff;
+  font-size: 3em;
+  caret-color: transparent;
+}
+
+.mid .btn {
+  margin-top: 2em;
+}
+
+.mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mid .btn a.noborder {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9em 1.6em;
+}
+
+.mid .btn a.noborder:hover {
+  color: #ff5733;
+  transition: 0.4s;
+}
+
+.mid .btn a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  font-weight: 500;
+  padding: 0.9em 1.6em;
+  border-radius: 3px;
+}
+
+.mid .btn a.border:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  transition: 0.4s;
+}
+
+/*------------------------------------------------------------------
+    DETAILS
+-------------------------------------------------------------------*/
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8em 15em;
+  background: #171819;
+}
+
+.details h3,
+h6,
+h5 {
+  color: #fff;
+}
+
+.details .one {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details .one h3 {
+  font-size: 2.5em;
+  padding-bottom: 0.2em;
+  caret-color: transparent;
+}
+
+.details .one h6 {
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-bottom: 0.2em;
+  caret-color: transparent;
+}
+
+.details .one p {
+  color: #666262;
+  font-size: 1.2em;
+  padding-bottom: 0.8em;
+  caret-color: transparent;
+}
+
+.details .one a {
+  color: #fff;
+  background: #f13a11;
+  padding: 1em 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  caret-color: transparent;
+}
+
+.details .one a:hover {
+  background: #fff;
+  color: #f13a11;
+  transition: 0.4s;
+}
+
+.details .two {
+  width: 45%;
+  border-left: 1px solid #666262;
+  padding-left: 4em;
+}
+
+.details .two h3 {
+  font-size: 2.5em;
+  caret-color: transparent;
+}
+
+.details .two h5 {
+  font-size: 1.1em;
+  caret-color: transparent;
+}
+
+.details .two p {
+  font-size: 1.1em;
+  color: #666262;
+  margin-bottom: 0.8em;
+  caret-color: transparent;
+}
+
+/*------------------------------------------------------------------
+    PERSONAL aboutMe
+-------------------------------------------------------------------*/
+
+.aboutMe {
+  background: #f9f9f9;
+  padding: 8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutMe .about {
+  width: 39%;
+}
+
+.aboutMe .about h2 {
+  color: #212529;
+  font-size: 2.1em;
+  padding-bottom: 1.1em;
+  caret-color: transparent;
+}
+
+.aboutMe .about p {
+  color: #7f8c8d;
+  font-size: 1.1em;
+  caret-color: transparent;
+}
+
+.aboutMe .card {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutMe .card .team1 {
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+
+.aboutMe .card .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.aboutMe .card .team1 .name,
+.aboutMe .card .team1 .pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutMe .card .team1 .name {
+  padding: 5px 20px 0 20px;
+}
+
+.aboutMe .card .team1 .aboutMeDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.aboutMe .card .team1 .name h4 {
+  color: #212529;
+  font-size: 1.5em;
+  caret-color: transparent;
+}
+
+.aboutMe .card .team1 .name i,
+.aboutMe .card .team1 .pro i {
+  font-size: 1.3em;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #212529;
+}
+
+.aboutMe .card .team1 .pro {
+  padding: 0 20px 5px 20px;
+}
+
+.aboutMe .card .team1 .pro p {
+  color: #212529;
+  caret-color: transparent;
+}
+
+/*------------------------------------------------------------------
+    CLASSES
+-------------------------------------------------------------------*/
+
+.class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7em 8em;
+}
+
+.class .paragraph {
+  font-size: 1.3em;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+  caret-color: transparent;
+}
+
+.class .h2 {
+  font-size: 2.2em;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
+  caret-color: transparent;
+}
+
+.class .classMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class .classMenu .team1 {
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+
+.class .classMenu .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+  caret-color: transparent;
+}
+
+.class .classMenu .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.class .classMenu .team1 .teamDetails .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0 30px;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails h6 {
+  color: #212529;
+  font-size: 1.5em;
+  caret-color: transparent;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p {
+  color: #212529;
+  font-size: 1.1em;
+  caret-color: transparent;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p span {
+  font-weight: 700;
+  font-size: 1.1em;
+  caret-color: transparent;
+}
+
+.class .classMenu .team1 .teamDetails .name .num h5 {
+  font-size: 1em;
+  background: #f13a11;
+  width: 3.5em;
+  height: 3.5em;
+  line-height: 3.5em;
+  text-align: center;
+  border-radius: 50%;
+  caret-color: transparent;
+}
+
+.class .classMenu .team1 .pro {
+  padding: 15px 30px 30px 30px;
+}
+
+.class .classMenu .team1 .pro p {
+  font-size: 1.1em;
+  color: #666262;
+  caret-color: transparent;
+}
+
+/*------------------------------------------------------------------
+    CONTACT
+-------------------------------------------------------------------*/
+
+.contact {
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact .form {
+  width: 45%;
+}
+
+.contact .form h2 {
+  font-size: 2em;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+  caret-color: transparent;
+}
+
+.contact .form .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact .form .submit input,
+.contact .form .submit textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #95a5a6;
+  outline: none;
+  margin: 13px 0;
+}
+
+.contact .form .submit input:focus,
+.contact .form .submit textarea:focus {
+  border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1em;
+}
+
+.contact .form .submit textarea::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1em;
+  height: 80%;
+}
+
+.contact .form .submit form a {
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  margin: 13px 0;
+  caret-color: transparent;
+}
+
+.contact .map {
+  width: 45%;
+}
+
+.contact .map h2 {
+  font-size: 2em;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+  caret-color: transparent;
+}
+
+.contact .map p {
+  font-size: 1.1em;
+  color: #212529;
+  padding-bottom: 30px;
+  width: 100%;
+  caret-color: transparent;
+}
+
+.contact .map p i {
+  color: red;
+  padding-right: 4px;
+  caret-color: transparent;
+}
+
+.contact .map iframe {
+  width: 100%;
+}
+
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+
+.footer {
+  border-top: 1px solid #ecf0f1;
+  padding: 5em 8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color: #7f8c8d;
+  justify-content: flex-start;
+  caret-color: transparent;
+}
+
+.footer p i {
+  color: red;
+  padding-right: 5px;
+  caret-color: transparent;
+}
+
+/*------------------------------------------------------------------
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!                 !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!  MEDIA QUERIES  !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!                 !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-------------------------------------------------------------------*/
+
+/*-----------------------  FOR LAPTOPS  ---------------------------*/
+
+/* @media screen and (min-width: 1043px) {
+  .aboutMe .card {
+    margin-left: 300px;
+  }
+} */
+
+@media screen and (max-width: 1042px) {
+  .nav {
+    padding: 1em 4.5em;
+  }
+
+  .nav h2 {
+    font-size: 1.4em;
+  }
+
+  #item li {
+    padding-right: 30px;
+  }
+
+  #item li a {
+    font-size: 0.9em;
+  }
+
+  #item .icon i {
+    padding-right: 20px;
+  }
+}
+
+/*--------------------  FOR SMALLER LAPTOPS  ----------------------*/
+
+@media screen and (max-width: 991px) {
+  /*------------------------------------------------------------------
+    HEADER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .nav {
+    padding: 1em 3em;
+  }
+
+  .nav h2 {
+    font-size: 1.6em;
+  }
+
+  #item {
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100000;
+    margin-top: 4.2em;
+    transition: 0.5s;
+  }
+
+  #item li {
+    padding-right: 0;
+    padding: 4px 0;
+  }
+
+  #item li a {
+    font-size: 1.2em;
+  }
+
+  #item .icon {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #item .icon i {
+    padding: 0 15px 0 15px;
+  }
+
+  #bar {
+    display: initial;
+    cursor: pointer;
+    caret-color: transparent;
+  }
+
+  /*------------------------------------------------------------------
+    BACKGROUND IMAGE - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .mid p {
+    font-size: 1.1em;
+    margin-bottom: 1.2em;
+  }
+
+  .mid h2 {
+    font-size: 2.5em;
+  }
+
+  .mid .btn {
+    margin-top: 1.5em;
+  }
+
+  .mid .btn a {
+    font-size: 0.9em;
+  }
+
+  .mid .btn a.noborder {
+    padding: 0.7em 1.4em;
+  }
+
+  .mid .btn a.border {
+    padding: 0.7em 1.4em;
+  }
+
+  /*------------------------------------------------------------------
+    DETAILS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .details {
+    padding: 6em 7em;
+  }
+
+  .details .one {
+    width: 50%;
+  }
+
+  .details .one h3 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+
+  .details .one p {
+    font-size: 1.1em;
+    padding-bottom: 2.2em;
+  }
+
+  .details .one a {
+    font-size: 0.9em;
+  }
+
+  .details .two {
+    padding-left: 3.5em;
+  }
+
+  .details .two h3 {
+    font-size: 2em;
+  }
+
+  .details .two h5 {
+    font-size: 1em;
+  }
+
+  .details .two p {
+    font-size: 1em;
+    margin-bottom: 0.6em;
+  }
+
+  /*------------------------------------------------------------------
+    PERSONAL aboutMeS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .aboutMe {
+    padding: 6em 7em;
+  }
+
+  .aboutMe .about h2 {
+    font-size: 2em;
+    padding-bottom: 1.4em;
+  }
+
+  .aboutMe .about p {
+    font-size: 1em;
+  }
+
+  .aboutMe .card .team1 .name {
+    padding: 5px 15px 0 15px;
+  }
+
+  .aboutMe .card .team1 .name h4 {
+    font-size: 1.1em;
+  }
+
+  .aboutMe .card .team1 .name i,
+  .aboutMe .card .team1 .pro i {
+    font-size: 1.1em;
+  }
+
+  .aboutMe .card .team1 .pro {
+    padding: 0 15px 5px 15px;
+  }
+
+  /*------------------------------------------------------------------
+    Projects - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .class {
+    padding: 6em;
+  }
+
+  .class .paragraph {
+    font-size: 1.1em;
+    padding-bottom: 4px;
+  }
+
+  .class .h2 {
+    font-size: 2em;
+    padding-bottom: 30px;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails {
+    padding-bottom: 7px;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails .name {
+    padding: 5px 15px 0 15px;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails .name .nameDetails h4 {
+    font-size: 1.2em;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails .name .nameDetails p {
+    font-size: 1em;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails .name .nameDetails p span {
+    font-size: 1em;
+  }
+
+  .class .classMenu .team1 .aboutMeDetails .name .num h5 {
+    font-size: 0.8em;
+    width: 3.2em;
+    height: 3.2em;
+    line-height: 3.2em;
+  }
+
+  .class .classMenu .team1 .pro {
+    padding: 15px 15px 30px 15px;
+  }
+
+  .class .classMenu .team1 .pro p {
+    font-size: 1em;
+  }
+
+  /*------------------------------------------------------------------
+    CONTACT - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .contact {
+    padding: 6em;
+  }
+
+  .contact .form h2 {
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+
+  .contact .form .submit input,
+  .contact .form .submit textarea {
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 1em;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 1em;
+  }
+
+  .contact .form .submit a {
+    padding: 13px;
+    font-size: 1em;
+    margin: 10px;
+  }
+
+  .contact .map h2 {
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+
+  .contact .map p {
+    font-size: 1em;
+    padding-bottom: 20px;
+  }
+
+  /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .footer {
+    padding: 6em;
+  }
+}
+
+/*-----------------------  FOR TABLETS  ---------------------------*/
+
+@media screen and (max-width: 768px) {
+  /*------------------------------------------------------------------
+    HEADER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .nav h2 {
+    font-size: 1.5em;
+  }
+
+  .back_img {
+    background-position: center;
+  }
+
+  /*------------------------------------------------------------------
+    BACKGROUND IMAGE - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .mid p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  .mid h2 {
+    font-size: 2.1em;
+  }
+
+  .mid .btn {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mid .btn a.noborder {
+    padding: 0.7em 1.4em;
+    margin-bottom: 7px;
+  }
+
+  .mid .btn a.border {
+    padding: 0.7em 1.4em;
+  }
+
+  /*------------------------------------------------------------------
+    DETAILS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .details {
+    padding: 5em 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details .one {
+    width: 70%;
+  }
+
+  .details .one a {
+    font-size: 1em;
+  }
+
+  .details .two {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid #666262;
+    width: 70%;
+    margin-top: 1.7em;
+    padding-top: 1.7em;
+  }
+
+  /*------------------------------------------------------------------
+    PERSONAL aboutMeS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .aboutMe {
+    padding: 5em 2em;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutMe .about {
+    width: 70%;
+    margin-bottom: 1.7em;
+  }
+
+  .aboutMe .card {
+    width: 70%;
+  }
+
+  /*------------------------------------------------------------------
+    PROJECTS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .class {
+    padding: 6em;
+  }
+
+  .class .classMenu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .class .classMenu .team1 {
+    width: 65%;
+    margin-bottom: 20px;
+  }
+
+  /*------------------------------------------------------------------
+    CONTACT - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .contact {
+    padding: 5em 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .form {
+    width: 70%;
+    margin-bottom: 1.5em;
+  }
+
+  .contact .form h2 {
+    font-size: 2.5em;
+  }
+
+  .contact .map {
+    width: 60%;
+  }
+
+  /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .footer {
+    padding: 5em 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*-----------------------  FOR MOBILES  ---------------------------*/
+
+@media screen and (max-width: 496px) {
+  /*------------------------------------------------------------------
+    BACKGROUND IMAGE - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .mid p {
+    margin-bottom: 0.8em;
+  }
+
+  .mid h2 {
+    font-size: 1.8em;
+  }
+
+  .mid .btn {
+    margin-top: 0.7em;
+  }
+
+  /*------------------------------------------------------------------
+    DETAILS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .details {
+    padding: 4em 1em;
+  }
+
+  .details .one {
+    width: 100%;
+  }
+
+  .details .two {
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------
+    PERSONAL aboutMeS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .aboutMe {
+    padding: 4em 1em;
+  }
+
+  .aboutMe .about {
+    width: 100%;
+  }
+
+  .aboutMe .card {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutMe .card .team1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*------------------------------------------------------------------
+    CLASSES - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .class {
+    padding: 4em 1em;
+  }
+
+  .class .classMenu .team1 {
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------
+    CONTACT - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .contact {
+    padding: 4em 1em;
+  }
+
+  .contact .form {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  .contact .map {
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .footer {
+    padding: 5em 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

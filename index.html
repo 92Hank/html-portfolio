@@ -3,27 +3,319 @@
   <head>
     <meta charset="utf-8" />
     <title>Henrik's Portfolio</title>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Site CSS -->
+    <link rel="stylesheet" type="text/css" href="layout/styles.css" />
   </head>
   <body>
-    <h1>Henrik Kristensson's Portfolio</h1>
+    <!-- Start header-->
+    <div class="nav">
+      <h2>Henrik's Portfolio</h2>
+      <ul id="item">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <div class="icon">
+          <a a href="https://www.linkedin.com/in/henrik-kristensson-b96364158"
+            ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i
+          ></a>
+          <a href="https://github.com/92Hank"
+            ><i class="fa fa-github fa-lg" aria-hidden="true"></i
+          ></a>
+        </div>
+      </ul>
+      <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End header -->
+
+    <!-- Start background image -->
+    <div class="back_img">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="mid">
+      <p>I'm a Developer with experience from .NET and React</p>
+      <h2>Right now looking for new opportunities</h2>
+
+      <div class="btn">
+        <a href="#contact" class="border">Contact me!</a>
+      </div>
+    </div>
+    <!-- End background image -->
+
+    <!-- Start details -->
+    <div class="details">
+      <div class="one">
+        <h3>Tech stack and Skills -</h3>
+        <h6>Databases</h6>
+        <p>- SQL Server, mongodb, Azure SQL</p>
+        <p>- PostgreSQL, Stored procedures</p>
+        <h6>Backend</h6>
+        <p>- Object oriented programming with C# and .NET</p>
+        <p>- Nodejs and express</p>
+        <p>- Entity framework</p>
+        <h6>Other skills</h6>
+        <p>- Code reviews, Agile, DevOps, Jira</p>
+        <p>- Storyblokk(headless CMS), centra</p>
+        <p>- SignalR</p>
+        <h6>Education</h6>
+        <p>- Higher Vocational Education Diploma, .NET System Developer</p>
+        <a href="#projects">Projects</a>
+      </div>
+
+      <div class="two">
+        <!-- <h3>Working hours</h3>
+        <br /> -->
+        <h5>Frontend</h5>
+        <p>- Javascript, Typescript</p>
+        <p>- HTML, CSS</p>
+        <p>- .NET MVC, Blazor, XAML, .NET Opensilver(WPF)</p>
+        <p>- React, React Native, Vue</p>
+        <p>- Android Studio, Ionic, Capacitor</p>
+        <p>- MaterialUI, SemanticUI, ChakraUI</p>
+        <p>- Redux, MobX</p>
+        <br />
+        <h5>Other skills</h5>
+        <p>- Xunit, Postman</p>
+        <p>- Git, Github, Github Actions</p>
+        <p>- Github Workflows</p>
+        <p>- Docker, Fly.IO, Azure</p>
+        <p>- Microsoft Identity, Axios</p>
+        <p>- CQRS, Clean Architecture</p>
+        <p>- React-i18next</p>
+      </div>
+    </div>
+    <!-- End details -->
+
+    <!-- Start about me -->
+    <div id="about" class="aboutMe">
+      <div class="about">
+        <h2>Hello, I'm Henrik Kristensson</h2>
+        <p>
+          A personal trainer is an individual who has earned a certification
+          that demonstrates they have achieved a level of competency for
+          creating and delivering safe and effective exercise programs for
+          apparently healthy individuals and groups.
+          <br />
+          <br />
+          They motivate clients by collaborating to set goals, providing
+          meaningful feedback, and by being a reliable source for
+          accountability. Thank you.
+        </p>
+      </div>
+      <div class="card">
+        <div class="team1">
+          <div class="img">
+            <img src="assets/images/hk3.jpg" />
+          </div>
+          <div class="aboutMeDetails">
+            <div class="name">
+              <h4>Henrik Kristensson</h4>
+              <a
+                a
+                href="https://www.linkedin.com/in/henrik-kristensson-b96364158"
+                ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="pro">
+              <p>Developer</p>
+              <a href="https://github.com/92Hank"
+                ><i class="fa fa-github fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="team1">
+          <div class="img">
+            <img src="assets/images/hk2.jpg" />
+          </div>
+          <div class="aboutMeDetails">
+            <div class="name">
+              <h4>Mary Yan</h4>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="pro">
+              <p>Yoga instructor</p>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- End about me -->
+
+    <!-- Start projects-->
+    <div id="projects" class="class">
+      <p class="paragraph">Check out</p>
+      <h2 class="h2">My projects</h2>
+      <div class="classMenu">
+        <div class="team1">
+          <div class="img">
+            <img src="assets/images/activitiez.jpg" height="200" />
+          </div>
+          <div class="teamDetails">
+            <div class="name">
+              <div class="nameDetails">
+                <h6>Events app</h6>
+                <p>Tech - <span>.Net & React</span></p>
+              </div>
+              <div class="num">
+                <h5>1</h5>
+              </div>
+            </div>
+            <div class="pro">
+              <p>
+                <a href="https://activitiez.fly.dev/"
+                  >Exam's project - Todo app</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/92Hank/Activitiez">Github repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team1">
+          <div class="img">
+            <img src="assets/images/spotify.jpg" height="200" />
+          </div>
+          <div class="teamDetails">
+            <div class="name">
+              <div class="nameDetails">
+                <h6>Landing page</h6>
+                <p>Tech - <span>HTML & CSS</span></p>
+              </div>
+              <div class="num">
+                <h5>2</h5>
+              </div>
+            </div>
+            <div class="pro">
+              <p>
+                <a href="https://92hank.github.io/SpotifyDemo/"
+                  >School project - Replica</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/92Hank/SpotifyDemo">Github repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team1">
+          <div class="img">
+            <img src="assets/images/movies.jpg" height="200" />
+          </div>
+          <div class="teamDetails">
+            <div class="name">
+              <div class="nameDetails">
+                <h6>Rental app</h6>
+                <p>Tech - <span>.NET Core MVC</span></p>
+              </div>
+              <div class="num">
+                <h5>3</h5>
+              </div>
+            </div>
+            <div class="pro">
+              <p>
+                <a href="https://sff-92hank.azurewebsites.net"
+                  >School project - Movies</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/92Hank/sff-92Hank">Github repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End projects-->
+
+    <!-- Start contact -->
+    <div id="contact" class="contact">
+      <div class="form">
+        <h2>Feel free to contact me</h2>
+        <div class="submit">
+          <form method="post">
+            <input id="name" type="text" name="" placeholder="Name" />
+            <input id="email" type="email" name="" placeholder="Email" />
+            <input id="subject" type="text" name="" placeholder="Subject" />
+            <textarea id="message" placeholder="Message"></textarea>
+            <button id="btn" href="#">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="map">
+        <h2>Where you can find us</h2>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Borås, Sweden</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+            1d68176.34892099022!2d12.85695894564516!3d57.7247652943207!2m3!1f
+            0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465aa0b04bdcfeed%3A
+            0x7c327e8fc1abfa59!2zQm9yw6Vz!5e0!3m2!1ssv!2sse!4v1622655882511!5m2!1ssv!2sse"
+          width="1250"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+    <!-- End contact -->
     <h2>I'm a Developer with experience from .NET and React</h2>
     <hr />
-    <h3><a href="https://activitiez.fly.dev/">Exam's project - A Todo/Planning app</a></h3>
-    <h3><a href="https://github.com/92Hank/Activitiez">Exam's project - Github repo</a></h3>
+    <h3>
+      <a href="https://activitiez.fly.dev/"
+        >Exam's project - A Todo/Planning app</a
+      >
+    </h3>
+    <h3>
+      <a href="https://github.com/92Hank/Activitiez"
+        >Exam's project - Github repo</a
+      >
+    </h3>
     <img
       src="./assets/images/activitiez.jpg"
       height="200"
       alt="Todo app project preview"
     />
-    <h3><a href="https://92hank.github.io/SpotifyDemo/">Responsive Landing page of Spotify using HTML and CSS</a></h3>
-    <h3><a href="https://github.com/92Hank/SpotifyDemo">Spotify Demo - Github repo</a></h3>
+    <h3>
+      <a href="https://92hank.github.io/SpotifyDemo/"
+        >Responsive Landing page of Spotify using HTML and CSS</a
+      >
+    </h3>
+    <h3>
+      <a href="https://github.com/92Hank/SpotifyDemo"
+        >Spotify Demo - Github repo</a
+      >
+    </h3>
     <img
       src="./assets/images/spotify.jpg"
       height="200"
       alt="spotify demo project preview"
     />
-    <h3><a href="https://sff-92hank.azurewebsites.net">A .NET Core MVC app for movie rentals</a></h3>
-    <h3><a href="https://github.com/92Hank/sff-92Hank">MVC movie rentals - Github repo</a></h3>
+    <h3>
+      <a href="https://sff-92hank.azurewebsites.net"
+        >A .NET Core MVC app for movie rentals</a
+      >
+    </h3>
+    <h3>
+      <a href="https://github.com/92Hank/sff-92Hank"
+        >MVC movie rentals - Github repo</a
+      >
+    </h3>
     <img
       src="./assets/images/movies.jpg"
       height="200"
@@ -32,6 +324,30 @@
     <hr />
     <a href="./public/about.html">About Me</a>
     <a href="./public/contact.html">Contact Me</a>
+    <!-- Start js files -->
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+        var body = "name: " + name + "<br/> email: " + email + "<br/> "
+        "subject: " + subject + "<br/> message: " + message;
+
+        Email.send({
+          SecureToken: " 0e57587a-0b28-49db-997d-f136fbb0e52c",
+          To: "henrik.g.kristensson@gmail.com",
+          From: email,
+          Subject: subject,
+          Body: body,
+        }).then((message) => alert(message));
+      });
+    </script>
+    <!-- End js files -->
   </body>
 </html>
 
