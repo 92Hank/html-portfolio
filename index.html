@@ -232,17 +232,12 @@
       <div class="form">
         <h2>Feel free to contact me</h2>
         <div class="submit">
-          <form method="post">
-            <input id="name" type="text" name="" placeholder="Name" />
-            <input id="email" type="email" name="" placeholder="Email" />
-            <input id="subject" type="text" name="" placeholder="Subject" />
-            <textarea id="message" placeholder="Message"></textarea>
-            <button id="btn" href="#contact">Send Message</button>
-          </form>
+          <img src="assets/images/hk2.jpg" />
+          <a class="btn" href="mailto:henrik.g.kristensson@gmail.com">Send Email</a>
         </div>
       </div>
       <div class="map">
-        <h2>Where you can find us</h2>
+        <h2>Where you can find me</h2>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i>Borås, Sweden</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
@@ -289,27 +284,6 @@
 
     <!-- Start js files -->
     <script src="js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      var btn = document.getElementById("btn");
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-        var body = "name: " + name + "<br/> email: " + email + "<br/> ";
-        "subject: " + subject + "<br/> message: " + message;
-
-        Email.send({
-          SecureToken: "0e57587a-0b28-49db-997d-f136fbb0e52c",
-          To: "henrik.g.kristensson@gmail.com",
-          From: email,
-          Subject: subject,
-          Body: body,
-        }).then((message) => alert(message));
-      });
-    </script>
     <!-- End js files -->
   </body>
 </html>

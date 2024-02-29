@@ -52,6 +52,7 @@ html {
 #item li {
   list-style: none;
   padding-right: 50px;
+  caret-color: transparent;
 }
 
 #item li a {
@@ -507,7 +508,11 @@ h5 {
   height: 80%;
 }
 
-.contact .form .submit form button {
+.contact .form .submit img {
+  width: 100%;
+}
+
+.contact .form .submit .btn {
   width: 100%;
   padding: 15px;
   text-decoration: none;
@@ -519,7 +524,7 @@ h5 {
   caret-color: transparent;
 }
 
-.contact .form .submit form button:hover {
+.contact .form .submit .btn:hover {
   background: #f13a11;
   color: #fff;
   cursor: pointer;
