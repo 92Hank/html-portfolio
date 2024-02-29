@@ -258,56 +258,35 @@
       </div>
     </div>
     <!-- End contact -->
-    <h2>I'm a Developer with experience from .NET and React</h2>
-    <hr />
-    <h3>
-      <a href="https://activitiez.fly.dev/"
-        >Exam's project - A Todo/Planning app</a
-      >
-    </h3>
-    <h3>
-      <a href="https://github.com/92Hank/Activitiez"
-        >Exam's project - Github repo</a
-      >
-    </h3>
-    <img
-      src="./assets/images/activitiez.jpg"
-      height="200"
-      alt="Todo app project preview"
-    />
-    <h3>
-      <a href="https://92hank.github.io/SpotifyDemo/"
-        >Responsive Landing page of Spotify using HTML and CSS</a
-      >
-    </h3>
-    <h3>
-      <a href="https://github.com/92Hank/SpotifyDemo"
-        >Spotify Demo - Github repo</a
-      >
-    </h3>
-    <img
-      src="./assets/images/spotify.jpg"
-      height="200"
-      alt="spotify demo project preview"
-    />
-    <h3>
-      <a href="https://sff-92hank.azurewebsites.net"
-        >A .NET Core MVC app for movie rentals</a
-      >
-    </h3>
-    <h3>
-      <a href="https://github.com/92Hank/sff-92Hank"
-        >MVC movie rentals - Github repo</a
-      >
-    </h3>
-    <img
-      src="./assets/images/movies.jpg"
-      height="200"
-      alt="movie rentals project preview"
-    />
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+
+    <!-- Start footer -->
+    <div class="footer">
+      <p>
+        <i class="fa fa-copyright" aria-hidden="true"></i> Henrik Kristensson
+        2024
+      </p>
+      <p>
+        <a href="mailto:henrik.g.kristensson@gmail.com">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          henrik.g.kristensson@gmail.com
+        </a>
+        <br />
+        <a href="https://www.linkedin.com/in/henrik-kristensson-b96364158"
+          ><i
+            id="linkedin"
+            class="fa fa-linkedin-square fa-lg"
+            aria-hidden="true"
+          ></i
+          >LinkedIn</a
+        >
+        <br />
+        <a href="https://github.com/92Hank"
+          ><i class="fa fa-github fa-lg" aria-hidden="true"></i>Github</a
+        >
+      </p>
+    </div>
+    <!-- End footer -->
+
     <!-- Start js files -->
     <script src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -319,7 +298,7 @@
         var email = document.getElementById("email").value;
         var subject = document.getElementById("subject").value;
         var message = document.getElementById("message").value;
-        var body = "name: " + name + "<br/> email: " + email + "<br/> "
+        var body = "name: " + name + "<br/> email: " + email + "<br/> ";
         "subject: " + subject + "<br/> message: " + message;
 
         Email.send({
@@ -334,17 +313,3 @@
     <!-- End js files -->
   </body>
 </html>
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->

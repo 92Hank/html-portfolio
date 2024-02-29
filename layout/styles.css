@@ -568,6 +568,16 @@ h5 {
   align-items: center;
 }
 
+.footer a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f13a11;
+  text-decoration: underline;
+}
+
 .footer p {
   color: #7f8c8d;
   justify-content: flex-start;
