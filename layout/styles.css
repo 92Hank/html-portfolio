@@ -507,7 +507,7 @@ h5 {
   height: 80%;
 }
 
-.contact .form .submit form a {
+.contact .form .submit form button {
   width: 100%;
   padding: 15px;
   text-decoration: none;
@@ -519,9 +519,10 @@ h5 {
   caret-color: transparent;
 }
 
-.contact .form .submit form a:hover {
+.contact .form .submit form button:hover {
   background: #f13a11;
   color: #fff;
+  cursor: pointer;
   transition: 0.4s;
 }
 
