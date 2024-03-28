@@ -79,6 +79,23 @@ html {
   font-weight: bolder;
 }
 
+.name li a:hover,
+.name .icon i:hover {
+  color: #ff5733;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.name .icon {
+  caret-color: transparent;
+}
+
+.name .icon i {
+  color: #000000;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
 #bar {
   color: #ff5733;
   font-weight: lighter;
