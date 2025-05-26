@@ -1,5 +1,5 @@
 # html-portfolio
-A portfolio to show projects to employers
+A portfolio
 ## Tech stack
 * HTML
 * CSS
